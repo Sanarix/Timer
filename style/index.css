@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;600&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html body{
+	height: 100vh;
+	background: #ff7e5f;
+	background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);
+	background: linear-gradient(to right, #feb47b, #ff7e5f);
+
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	width: 100%;
+}
+
+.timer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: 'Pacifico', cursive;
+	width: 60%;
+}
+
+.timer-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 20%;
+}
+
+.timer-colon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 5em;
+}
+
+.timer-text {
+	font-family: 'Prompt', sans-serif;
+	font-weight: 600;
+	font-size: 2em;
+	text-align: center;
+}
+
+.timer-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 9em;
+	font-weight: 600;
+}
+
+.buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 5%;
+	width: 100%;
+}
+
+.button {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 10px 10px;
+	min-width: 10%;
+	text-align: center;
+	background-color: lightgrey;
+	border: 2px solid black;
+	border-radius: 5px;
+	font-size: 1.5em;
+	font-family: 'Prompt', sans-serif;
+	cursor: pointer;
+	box-shadow: 0 0 4px 1px black;
+	user-select: none;
+}
+
+.button:active {
+	box-shadow: inset 1px 1px 5px 2px black;
+}
+
+.start:hover {
+	background-color: limegreen;
+	color: white;
+}
+
+.pause {
+	margin: 0 15%;
+}
+
+.pause:hover {
+	background-color: firebrick;
+	color: white;
+}
+
+.reset:hover {
+	background-color: sandybrown;
+	color: white;
+}
+
+@media(max-width: 1200px) {
+	.timer{
+		font-size: 0.8em;
+	}
+
+	.button {
+		font-size: 1.2em;
+	}
+
+	.fa {
+		font-size: 0.8em;
+	}
+}
+
+@media(max-width: 960px) {
+	.timer{
+		font-size: 0.5em;
+	}
+
+	.button {
+		display: block;
+	}
+
+	.button-text {
+		display: none;
+	}
+}
+
+@media(max-width: 640px) {
+	.timer{
+		font-size: 0.4em;
+	}
+}

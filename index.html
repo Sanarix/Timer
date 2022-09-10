@@ -5,8 +5,35 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Timer</title>
+	<link rel="icon" href="https://www.svgrepo.com/show/230519/chronometer-timer.svg">
+	<link rel="stylesheet" href="./style/index.css">
+	<script src="https://kit.fontawesome.com/2973fc8249.js" crossorigin="anonymous"></script>
+	<script src="./script/main.js" defer></script>
 </head>
 <body>
-	
+	<div class="container">
+		<div class="timer">
+			<div class="timer-container"><div class="timer-item hours">00</div>
+			<div class="timer-text">Hours</div>
+		</div>
+			<div class="timer-colon">:</div>
+			<div class="timer-container"><div class="timer-item minutes">00</div>
+			<div class="timer-text">Minutes</div>
+			</div>
+			<div class="timer-colon">:</div>
+			<div class="timer-container"><div class="timer-item seconds">00</div>
+			<div class="timer-text">Seconds</div>
+			</div>
+			<div class="timer-colon">:</div>
+			<div class="timer-container"><div class="timer-item milliseconds">00</div>
+			<div class="timer-text">Milliseconds</div>
+			</div>
+		</div>
+		<div class="buttons">
+			<button class="button start"><span class="button-text">Start</span><i class="fa fa-light fa-play start-icon"></i></button>
+			<button class="button pause"><span class="button-text">Pause</span><i class="fa fa-light fa-pause"></i></button>
+			<button class="button reset"><span class="button-text">Reset</span><i class="fa fa-refresh" aria-hidden="true"></i></button>
+		</div>
+	</div>
 </body>
 </html>
