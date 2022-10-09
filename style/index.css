@@ -142,4 +142,8 @@ html body{
 	.timer{
 		font-size: 0.4em;
 	}
+
+	.timer-container {
+		width: 100%;
+	}
 }
